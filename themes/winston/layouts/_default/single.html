@@ -1,0 +1,25 @@
+{{ define "body_classes" }}page-default-single{{ end }}
+
+{{ define "main" }}
+
+{{ $jahr := .PublishDate.Format "2006" }}
+<div class="summary">
+	{{ if .PublishDate }}
+		<div class="summary-date">
+			{{ .PublishDate.Format "2." }} {{ index .Site.Data.monate (.PublishDate.Format "1")}} {{ if le $jahr "2022" }}{{ .PublishDate.Format "2006"}}{{ end }}
+		</div>
+			{{ if .Params.tags }}<div class="summary-cat">{{ .Params.tags }}</div>{{ end }}
+	{{ end }}
+	<h2 class="summary-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+
+
+				<div class="content">
+					{{ .Content }}
+				</div>
+
+
+</div>
+
+
+
+{{ end }}
