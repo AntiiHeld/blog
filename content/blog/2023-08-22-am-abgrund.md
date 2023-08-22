@@ -1,7 +1,7 @@
 +++
 date = "2023-08-22T20:01:00"
 title = "Am Abgrund"
-tags = "Ursprüngliches Datum: 23.09.2022"
+tags = "23. September 2022"
 draft = ""
 image = ""
 +++
