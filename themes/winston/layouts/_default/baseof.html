@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ .Site.Title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{{ .Site.BaseURL }}favicon.ico">
+
+		{{ if .Site.IsServer }}
+		{{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
+		<link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+		{{ else }}
+		{{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" false) }}
+		<link rel="stylesheet" href="{{ ($style | minify).RelPermalink }}">
+	  {{ end }}
+
+  {{ block "meta_tags" . }}
+    {{ if .Params.description }}<meta name="description" content="{{ .Params.description }}"/>{{ end }}
+    <meta property="og:title" content="{{ .Title }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="{{ .Permalink }}"/>
+    {{ if .Params.image }}<meta property="og:image" content="{{ .Params.image | absURL }}"/>{{ end }}
+    {{ if .Params.description }}<meta property="og:description" content="{{ .Params.description }}"/>{{ end }}
+  {{ end }}
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setCookieDomain", "*.antiiheld.de"]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//antiiheld.4lima.de/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//antiiheld.4lima.de/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+  
+<!-- Clarity Code -->  
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "e5hjngw7ln");
+</script>
+<!-- End Clarity Code -->
+  
+</head>
+
+{{ $themeStyle := slice "" }}
+{{ if eq .Site.Params.addFrame true }}{{ $themeStyle = $themeStyle | append "frame" }}{{ end }}
+<body class='page{{ delimit $themeStyle " " }} {{ block "body_classes" . }}{{ end }}'>
+  {{ partial "menu-main-mobile.html" . }}
+  <div id="wrapper" class="wrapper">
+  
+
+
+    <style>
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Grundlegende Stile für den Countdown */
+        .countdown {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(1, 1, 1, 1);
+        }
+
+        .countdown-item {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        span {
+            font-size: 18px;
+            display: block;
+        }
+
+        /* Media Query für Bildschirme mit einer Breite von bis zu 600px */
+        @media (max-width: 600px) {
+            .countdown {
+
+                text-align: center; /* Zentriert den Text in den Spalten */
+            }
+
+            .countdown-item {
+                margin: 5px;
+            }
+
+            span {
+                font-size: 18px; /* Verringert die Schriftgröße für kleinere Bildschirme */
+            }
+        }
+    </style>
+
+    <div class="countdown">
+        <div class="countdown-item">
+            <span id="days">00 Tage</span>
+        </div>
+        <div class="countdown-item">
+            <span id="hours">00 Std.</span>
+        </div>
+        <div class="countdown-item">
+            <span id="minutes">00 Min.</span>
+        </div>
+        <div class="countdown-item">
+            <span id="seconds">00 Sek.</span>
+        </div>
+        <div class="countdown-item">
+            <span id="milliseconds">000 Nano</span>
+        </div>
+    </div>
+    <script>
+        // Setze das gewünschte Enddatum und die Uhrzeit (Jahr, Monat (0-11), Tag, Stunde, Minute, Sekunde)
+        const endDate = new Date(2023, 7, 31, 20, 12, 0); // Hier 31. August 2023 um 18:30 Uhr
+
+        function updateCountdown() {
+            const now = new Date();
+            const timeDifference = endDate - now;
+
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+            const milliseconds = timeDifference % 1000;
+
+            document.getElementById("days").textContent = String(days).padStart(2, "0") + " Tage";
+            document.getElementById("hours").textContent = String(hours).padStart(2, "0") + " Std.";
+            document.getElementById("minutes").textContent = String(minutes).padStart(2, "0") + " Min.";
+            document.getElementById("seconds").textContent = String(seconds).padStart(2, "0") + " Sek.";
+            document.getElementById("milliseconds").textContent = String(milliseconds).padStart(3, "0") + " Ns";
+
+            if (timeDifference <= 0) {
+                clearInterval(interval);
+                document.querySelector(".countdown").textContent = "Countdown abgelaufen!";
+            }
+        }
+
+        updateCountdown();
+        const interval = setInterval(updateCountdown, 10);
+    </script>
+
+
+  </div>
+
+  {{ $scripts := resources.Get "js/scripts.js" }}
+
+  {{ $js := slice $scripts | resources.Concat "js/bundle.js" }}
+
+
+		{{ if .Site.IsServer }}
+		<script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
+		{{ else }}
+		<script type="text/javascript" src="{{ ($js | minify).RelPermalink }}"></script>
+		{{ end }}
+
+  {{ block "footer_js" . }}
+  {{ end }}
+
+</body>
+</html>
