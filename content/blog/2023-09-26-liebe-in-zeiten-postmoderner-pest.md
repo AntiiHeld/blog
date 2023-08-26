@@ -1,6 +1,6 @@
 +++
 date = "2023-08-26T20:25:00"
-title = "Liebe in Zeiten der postmodernen Pest"
+title = "Liebe in Zeiten postmoderner Pest"
 tags = ""
 draft = ""
 image = ""
