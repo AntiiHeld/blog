@@ -5,10 +5,6 @@ tags = ""
 draft = ""
 image = ""
 +++
-Warum war ich nicht genug?
-
-Warum hast du nicht gesehen, was ich für dich fühlte?
-
 Du sagst Sie kennt deine Macken – war Sie auch für dich da, als du am Abgrund standest und hat dich gehalten, obwohl Sie selbst fiel?
 
 War Sie auch dabei als du durch die Hölle der Schmerzen, die du dir selbst zufügtest, gingst und hat dich unterstützt, obwohl Sie selbst gelitten hat?
