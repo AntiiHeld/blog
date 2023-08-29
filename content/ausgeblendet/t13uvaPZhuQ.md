@@ -4,6 +4,7 @@ title = "t13uvaPZhuQ"
 tags = ""
 draft = ""
 image = ""
+url = "/t13uvaPZhuQ"
 +++
- <meta http-equiv="refresh" content="1; URL=https://youtu.be/299cICuEISI?si=-uovrSRX3ourE43w" />
+ <meta http-equiv="refresh" content="1; URL=https://youtu.be/t13uvaPZhuQ" />
  
