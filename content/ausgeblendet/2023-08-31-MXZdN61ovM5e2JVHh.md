@@ -4,7 +4,7 @@ title = "Dc3Rk4PefUL99"
 tags = ""
 draft = ""
 image = ""
-url = "/unpublished/dc3rk4peful9"
+url = "/notes/dc3rk4peful9"
 +++
 U2FsdGVkX1/SVTDZleCMJBR0
 ok/syKwVslLIKdkIXlDtRqQB
