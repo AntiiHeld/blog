@@ -3,7 +3,7 @@ title = "Erinnerungen an die Zukunft "
 tags = ""
 draft = ""
 image = ""
-url= "/tw/"
+url= "/eadz/"
 +++
 {{<rawhtml>}}
   <img id="slideshow" src="" alt="Bild" />
