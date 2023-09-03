@@ -1,9 +1,9 @@
 +++
-title = "f"
+title = "Erinnerungen an die Zukunft "
 tags = ""
 draft = ""
 image = ""
-url= "/zeichnungen/"
+url= "/tw/"
 +++
 {{<rawhtml>}}
   <img id="slideshow" src="" alt="Bild" />
