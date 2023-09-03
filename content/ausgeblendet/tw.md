@@ -4,8 +4,6 @@ title = "Erinnerungen an die Zukunft "
 tags = ""
 draft = ""
 image = ""
-url= "/eadz/"
-blog/03/09/2023/erinnerungen-an-die-zukunft/
 +++
 {{<rawhtml>}}
   <img id="slideshow" src="" alt="Bild" />
