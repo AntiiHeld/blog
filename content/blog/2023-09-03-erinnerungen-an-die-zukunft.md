@@ -10,7 +10,6 @@ image = ""
 
   <script>
     const bilder = [
-      '/tw/2023_05_18-min.png',
       '/tw/2023_05_19-min.png',
       '/tw/2023_05_19_01-min.png',
       '/tw/2023_05_20-min.png',
