@@ -4,6 +4,7 @@ title = ""
 tags = ""
 draft = ""
 image = ""
+url = "blog/11/09/2023/aehnlichkeiten" 
 +++
 # {{<rawhtml>}}<span class="title">Ähnlichkeiten</span>{{</rawhtml>}}
 {{<rawhtml>}}<span class="hide1">Stark und doch sanft,</span>{{</rawhtml>}}\
