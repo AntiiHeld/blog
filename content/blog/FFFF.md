@@ -7,10 +7,10 @@ image = ""
 +++
 # {{<rawhtml>}}<span class="title">Ähnlichkeiten</span>{{</rawhtml>}}
 {{<rawhtml>}}<span class="hide1">Stark und doch sanft,</span>{{</rawhtml>}}\
-Hart und doch zärtlich\
-Zart und doch so zerbrechlich\
-{{<rawhtml>}}<span class="eins">SIE</span>{{</rawhtml>}} hat ein Loch im Herz\
-Grausam tief sitzt der Schmerz\
+{{<rawhtml>}}<span class="hide2">Hart und doch zärtlich</span>{{</rawhtml>}}\
+{{<rawhtml>}}<span class="hide3">Zart und doch so zerbrechlich</span>{{</rawhtml>}}\
+{{<rawhtml>}}<span class="eins">SIE</span>{{</rawhtml>}} {{<rawhtml>}}<span class="hide4">hat ein Loch im Herz</span>{{</rawhtml>}}\
+{{<rawhtml>}}<span class="hide5">Grausam tief sitzt der Schmerz</span>{{</rawhtml>}}\
 {{<rawhtml>}}<span class="zwei">SIE</span>{{</rawhtml>}} kniet am Boden, {{<rawhtml>}}<span class="drei">SIE</span>{{</rawhtml>}} betet, fleht,\
 Hofft, das der Alptraum vergeht.\
 {{<rawhtml>}}<span class="vier">SIE</span>{{</rawhtml>}} ringt nach Luft.\
@@ -110,6 +110,10 @@ class eins {
   const eltitle = document.querySelector('.title');
   const elnachricht = document.querySelector('.nachricht');
   const elhide1 = document.querySelector('.hide1');
+  const elhide2 = document.querySelector('.hide2');
+  const elhide3 = document.querySelector('.hide3');
+  const elhide4 = document.querySelector('.hide4');
+  const elhide5 = document.querySelector('.hide5');
 
   
   // TEIL 2
@@ -123,6 +127,10 @@ class eins {
   const fxtitle = new eins(eltitle);
   const fxnachricht = new eins(elnachricht);
   const fxhide1 = new eins(elhide1);
+  const fxhide2 = new eins(elhide2);
+  const fxhide3 = new eins(elhide3);
+  const fxhide4 = new eins(elhide4);
+  const fxhide5 = new eins(elhide5);
 
 
   // TEIL 3
@@ -137,7 +145,15 @@ class eins {
   const phrasesnachricht = ['Bitte warten...','Zum Neustarten Seite neuladen...','60','59','58','57','56','55','54','53','52','51','50','49','48','47','46','45','44','43','42','41','40','39','38','37','36','35','34','33','32','31','Nachricht wird entschlüsselt...','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9','8','7','6','5','4','3','2','1','0','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
 
 
-  const phrasehide1 = ['Stark und doch sanft,','JETZT'];
+  const phrasehide1 = ['Stark und doch sanft,','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+  
+  const phrasehide2 = ['Hart und doch zärtlich','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+  
+  const phrasehide3 = ['Zart und doch so zerbrechlich','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+  
+  const phrasehide4 = ['hat ein Loch im Herz','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+  
+  const phrasehide5 = ['Grausam tief sitzt der Schmerz','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
 
   
   // TEIL 4
@@ -151,6 +167,10 @@ class eins {
   let countertitle = 0;
   let counternachricht = 0;
   let counterhide1 = 0;
+  let counterhide2 = 0;
+  let counterhide3 = 0;
+  let counterhide4 = 0;
+  let counterhide5 = 0;
 
   
   // TEIL 5
@@ -238,9 +258,45 @@ class eins {
     // Funktionen zum Aktualisieren der Texte für jedes Element
   const nexthide1 = () => {
     fxhide1.setText(phrasehide1[counterhide1]).then(() => {
-      setTimeout(nexthide1, 100000);
+      setTimeout(nexthide1, 110000);
     });
     counterhide1 = (counterhide1 + 1) % phrasehide1.length;
+  };
+  // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide2 = () => {
+    fxhide2.setText(phrasehide2[counterhide2]).then(() => {
+      setTimeout(nexthide2, 110000);
+    });
+    counterhide2 = (counterhide2 + 1) % phrasehide2.length;
+  };
+  // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide3 = () => {
+    fxhide3.setText(phrasehide3[counterhide3]).then(() => {
+      setTimeout(nexthide3, 110000);
+    });
+    counterhide3 = (counterhide3 + 1) % phrasehide3.length;
+  };
+  // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide4 = () => {
+    fxhide4.setText(phrasehide4[counterhide4]).then(() => {
+      setTimeout(nexthide4, 110000);
+    });
+    counterhide4 = (counterhide4 + 1) % phrasehide4.length;
+  };
+  // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide5 = () => {
+    fxhide5.setText(phrasehide5[counterhide5]).then(() => {
+      setTimeout(nexthide5, 110000);
+    });
+    counterhide5 = (counterhide5 + 1) % phrasehide5.length;
   };
   // ENDE
 
@@ -255,6 +311,10 @@ class eins {
   nexttitle();
   nextnachricht();
   nexthide1();
+  nexthide2();
+  nexthide3();
+  nexthide4();
+  nexthide5();
 
     </script>
 	
