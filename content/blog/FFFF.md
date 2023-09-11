@@ -1,6 +1,6 @@
 +++
 date = "2023-09-11T01:19:00"
-title = "."
+title = ""
 tags = ""
 draft = ""
 image = ""
