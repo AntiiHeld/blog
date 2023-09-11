@@ -22,7 +22,7 @@ image = ""
 \
 \
 \
-{{<rawhtml>}}<span class="nachricht">?</span>{{</rawhtml>}}
+{{<rawhtml>}}<!--<span class="nachricht">?</span>-->{{</rawhtml>}}
 
 
 
