@@ -11,14 +11,14 @@ image = ""
 {{<rawhtml>}}<span class="hide3">Zart und doch so zerbrechlich</span>{{</rawhtml>}}\
 {{<rawhtml>}}<span class="eins">SIE</span>{{</rawhtml>}} {{<rawhtml>}}<span class="hide4">hat ein Loch im Herz</span>{{</rawhtml>}}\
 {{<rawhtml>}}<span class="hide5">Grausam tief sitzt der Schmerz</span>{{</rawhtml>}}\
-{{<rawhtml>}}<span class="zwei">SIE</span>{{</rawhtml>}} kniet am Boden, {{<rawhtml>}}<span class="drei">SIE</span>{{</rawhtml>}} betet, fleht,\
-Hofft, das der Alptraum vergeht.\
-{{<rawhtml>}}<span class="vier">SIE</span>{{</rawhtml>}} ringt nach Luft.\
-Panik. Angst.\
-Schweiß tropft von den Wänden.\
-{{<rawhtml>}}<span class="funf">IHR</span>{{</rawhtml>}} eigenes Blut an den Händen.\
-In {{<rawhtml>}}<span class="sechs">IHREM</span>{{</rawhtml>}} Schoß liegen Scherben.\
-{{<rawhtml>}}<span class="sieben">SIE</span>{{</rawhtml>}} würde gern.
+{{<rawhtml>}}<span class="zwei">SIE</span>{{</rawhtml>}} {{<rawhtml>}}<span class="hide6">kniet am Boden,</span>{{</rawhtml>}} {{<rawhtml>}}<span class="drei">SIE</span>{{</rawhtml>}} {{<rawhtml>}}<span class="hide7">betet, fleht,</span>{{</rawhtml>}}\
+{{<rawhtml>}}<span class="hide8">Hofft, das der Alptraum vergeht.</span>{{</rawhtml>}}\
+{{<rawhtml>}}<span class="vier">SIE</span>{{</rawhtml>}} {{<rawhtml>}}<span class="hide9">ringt nach Luft.</span>{{</rawhtml>}}\
+{{<rawhtml>}}<span class="hide10">Panik. Angst.</span>{{</rawhtml>}}\
+{{<rawhtml>}}<span class="hide11">Schweiß tropft von den Wänden.</span>{{</rawhtml>}}\
+{{<rawhtml>}}<span class="funf">IHR</span>{{</rawhtml>}} {{<rawhtml>}}<span class="hide12">eigenes Blut an den Händen.</span>{{</rawhtml>}}\
+{{<rawhtml>}}<span class="hide13">In</span>{{</rawhtml>}} {{<rawhtml>}}<span class="sechs">IHREM</span>{{</rawhtml>}} {{<rawhtml>}}<span class="hide14">Schoß liegen Scherben.</span>{{</rawhtml>}}\
+{{<rawhtml>}}<span class="sieben">SIE</span>{{</rawhtml>}} {{<rawhtml>}}<span class="hide15">würde gern.</span>{{</rawhtml>}}
 \
 \
 \
@@ -114,6 +114,16 @@ class eins {
   const elhide3 = document.querySelector('.hide3');
   const elhide4 = document.querySelector('.hide4');
   const elhide5 = document.querySelector('.hide5');
+  const elhide6 = document.querySelector('.hide6');
+  const elhide7 = document.querySelector('.hide7');
+  const elhide8 = document.querySelector('.hide8');
+  const elhide9 = document.querySelector('.hide9');
+  const elhide10 = document.querySelector('.hide10');
+  const elhide11 = document.querySelector('.hide11');
+  const elhide12 = document.querySelector('.hide12');
+  const elhide13 = document.querySelector('.hide13');
+  const elhide14 = document.querySelector('.hide14');
+  const elhide15 = document.querySelector('.hide15');
 
   
   // TEIL 2
@@ -131,6 +141,16 @@ class eins {
   const fxhide3 = new eins(elhide3);
   const fxhide4 = new eins(elhide4);
   const fxhide5 = new eins(elhide5);
+  const fxhide6 = new eins(elhide6);
+  const fxhide7 = new eins(elhide7);
+  const fxhide8 = new eins(elhide8);
+  const fxhide9 = new eins(elhide9);
+  const fxhide10 = new eins(elhide10);
+  const fxhide11 = new eins(elhide11);
+  const fxhide12 = new eins(elhide12);
+  const fxhide13 = new eins(elhide13);
+  const fxhide14 = new eins(elhide14);
+  const fxhide15 = new eins(elhide15);
 
 
   // TEIL 3
@@ -154,7 +174,26 @@ class eins {
   const phrasehide4 = ['hat ein Loch im Herz','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
   
   const phrasehide5 = ['Grausam tief sitzt der Schmerz','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
-
+  
+  const phrasehide6 = ['kniet am Boden,','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+  
+  const phrasehide7 = ['betet, fleht,','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+  
+  const phrasehide8 = ['Hofft, das der Alptraum vergeht.','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+  
+  const phrasehide9 = ['ringt nach Luft.','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+  
+  const phrasehide10 = ['Panik. Angst.','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+  
+  const phrasehide11 = ['Schweiß tropft von den Wänden.','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+  
+  const phrasehide12 = ['eigenes Blut an den Händen.','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+  
+  const phrasehide13 = ['In','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+  
+  const phrasehide14 = ['Schoß liegen Scherben.','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+  
+  const phrasehide15 = ['würde gern.','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
   
   // TEIL 4
   let counter1 = 0;
@@ -171,6 +210,16 @@ class eins {
   let counterhide3 = 0;
   let counterhide4 = 0;
   let counterhide5 = 0;
+  let counterhide6 = 0;
+  let counterhide7 = 0;
+  let counterhide8 = 0;
+  let counterhide9 = 0;
+  let counterhide10 = 0;
+  let counterhide11 = 0;
+  let counterhide12 = 0;
+  let counterhide13 = 0;
+  let counterhide14 = 0;
+  let counterhide15 = 0;
 
   
   // TEIL 5
@@ -299,6 +348,96 @@ class eins {
     counterhide5 = (counterhide5 + 1) % phrasehide5.length;
   };
   // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide6 = () => {
+    fxhide6.setText(phrasehide6[counterhide6]).then(() => {
+      setTimeout(nexthide6, 110000);
+    });
+    counterhide6 = (counterhide6 + 1) % phrasehide6.length;
+  };
+  // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide7 = () => {
+    fxhide7.setText(phrasehide7[counterhide7]).then(() => {
+      setTimeout(nexthide7, 110000);
+    });
+    counterhide7 = (counterhide7 + 1) % phrasehide7.length;
+  };
+  // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide8 = () => {
+    fxhide8.setText(phrasehide8[counterhide8]).then(() => {
+      setTimeout(nexthide8, 110000);
+    });
+    counterhide8 = (counterhide8 + 1) % phrasehide8.length;
+  };
+  // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide9 = () => {
+    fxhide9.setText(phrasehide9[counterhide9]).then(() => {
+      setTimeout(nexthide9, 110000);
+    });
+    counterhide9 = (counterhide9 + 1) % phrasehide9.length;
+  };
+  // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide10 = () => {
+    fxhide10.setText(phrasehide10[counterhide10]).then(() => {
+      setTimeout(nexthide10, 110000);
+    });
+    counterhide10 = (counterhide10 + 1) % phrasehide10.length;
+  };
+  // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide11 = () => {
+    fxhide11.setText(phrasehide11[counterhide11]).then(() => {
+      setTimeout(nexthide11, 110000);
+    });
+    counterhide11 = (counterhide11 + 1) % phrasehide11.length;
+  };
+  // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide12 = () => {
+    fxhide12.setText(phrasehide12[counterhide12]).then(() => {
+      setTimeout(nexthide12, 110000);
+    });
+    counterhide12 = (counterhide12 + 1) % phrasehide12.length;
+  };
+  // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide13 = () => {
+    fxhide13.setText(phrasehide13[counterhide13]).then(() => {
+      setTimeout(nexthide13, 110000);
+    });
+    counterhide13 = (counterhide13 + 1) % phrasehide13.length;
+  };
+  // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide14 = () => {
+    fxhide14.setText(phrasehide14[counterhide14]).then(() => {
+      setTimeout(nexthide14, 110000);
+    });
+    counterhide14 = (counterhide14 + 1) % phrasehide14.length;
+  };
+  // ENDE
+  
+    // Funktionen zum Aktualisieren der Texte für jedes Element
+  const nexthide15 = () => {
+    fxhide15.setText(phrasehide15[counterhide15]).then(() => {
+      setTimeout(nexthide15, 110000);
+    });
+    counterhide15 = (counterhide15 + 1) % phrasehide15.length;
+  };
+  // ENDE
 
   // TEIL 6
   next1();
@@ -315,6 +454,16 @@ class eins {
   nexthide3();
   nexthide4();
   nexthide5();
+  nexthide6();
+  nexthide7();
+  nexthide8();
+  nexthide9();
+  nexthide10();
+  nexthide11();
+  nexthide12();
+  nexthide13();
+  nexthide14();
+  nexthide15();
 
     </script>
 	
