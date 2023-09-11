@@ -4,7 +4,7 @@ title = "x"
 tags = ""
 draft = ""
 image = ""
-url = "/test"
+url = "test"
 +++
 # {{<rawhtml>}}<span class="title">Ähnlichkeiten</span>{{</rawhtml>}}
 {{<rawhtml>}}<span class="hide1">Stark und doch sanft,</span>{{</rawhtml>}}\
