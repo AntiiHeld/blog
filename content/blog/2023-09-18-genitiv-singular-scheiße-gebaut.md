@@ -13,13 +13,13 @@ Sie sind nur tot.\
 Am ehrlichsten zu mir selbst kann ich\
 nur allein sein\
 wenn keiner außer mir sieht, was ich getan habe, was ich denke, fühle;\
-wenn alles in mir bleibt.\
+wenn alles in mir bleibt.
 
 Küss mich nochmal und sag, dass du mich willst.\
 Lüg mich nochmal an und sag, dass du so unglaublich verliebt bist.\
 Es ist zu schön, um es nicht zu hören.\
 Es ist besser als diese Leere.\
-Alles ist besser als diese verdammte Leere.\
+Alles ist besser als diese verdammte Leere.
 
 Noch eine Umarmung, eine Nacht, bevor ich mich wieder in mir selbst verliere.\
 In der Dunkelheit sagt sich die Vergangenheit leicht\
