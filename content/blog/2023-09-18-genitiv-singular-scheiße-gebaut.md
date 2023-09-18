@@ -1,6 +1,6 @@
 +++
 date = "2023-09-18T17:55:00"
-title = "Genitiv Singular: Scheiße gebaut"
+title = "Genitiv Singular: Ich habe Scheiße gebaut"
 tags = ""
 draft = ""
 image = ""
