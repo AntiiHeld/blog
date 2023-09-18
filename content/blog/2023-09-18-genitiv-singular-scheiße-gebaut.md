@@ -22,8 +22,10 @@ obwohl es nur eine Lüge ist\
 es ist besser als diese Leere\
 Alles ist besser als diese verdammte Leere\
 noch eine Umarmung, eine Nacht, bevor ich mich wieder in mir selbst verliere\
-in der Dunkelheit sagt sich die Vergangenheit leicht und hat für einen Moment ihre Schwere verloren\
-Trauma erklärt sich so leicht, wenn beide gebrannte Kinder sind\
+in der Dunkelheit sagt sich die Vergangenheit leicht\
+und hat für einen Moment ihre Schwere verloren\
+Trauma erklärt sich so leicht,\
+wenn beide gebrannte Kinder sind\
 Hör mir zu und\
 halte mich für einen Moment länger als nötig\
 aber sag nicht, ich hätte nie geliebt
